@@ -1,0 +1,39 @@
+<div class="container-fluid mt-3">
+    <h2 class="text-center mb-4">¿Qué estás buscando?</h2>
+
+    <div class="w-100 d-flex justify-content-center align-items-center mb-4">
+        <span class="me-3 fs-4">Categoría:</span>
+        <select class="js-multiple-select form-control w-input-filter" name="categorias[]" id="categoria"
+            multiple="multiple">
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming</option>
+        </select>
+    </div>
+
+    <div class="input-group w-100 d-flex justify-content-center align-items-center mb-4">
+        <input type="text" id="busqueda" class="form-control w-input-filter mb-3" placeholder="¿Qué producto buscas?">
+    </div>
+
+    <div class="w-100 d-flex justify-content-center align-items-center mb-4">
+        <button type="button" class="btn btn-find-color mx-2">Buscar <i class="bi bi-search"></i></button>
+        <button type="button" id="btnLimpiar" class="btn btn-clear-color mx-2">Limpiar Filtros <i
+                class="bi bi-eraser-fill"></i></button>
+    </div>
+
+
+
+</div>
+
+
+<script>
+
+    const limpiarFiltros = () => {
+        const busqueda = document.getElementById("busqueda");
+
+        $("#categoria").val(null).trigger("change")
+        busqueda.value = "";
+    }
+
+    document.getElementById("btnLimpiar").addEventListener("click", limpiarFiltros, false);
+
+</script>

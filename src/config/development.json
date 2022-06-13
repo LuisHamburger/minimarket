@@ -1,0 +1,4 @@
+{
+    "MONGO_INITDB_ROOT_HOST": "mongodb",
+    "MYSQL_HOST": "mysql"
+}

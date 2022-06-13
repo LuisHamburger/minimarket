@@ -1,0 +1,75 @@
+<div class="container-fluid d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#modalCliente"
+    id="container-status-error">
+    <button type="button"
+        class="btn btn-lg mt-3 d-flex align-items-center justify-content-center customer-status-error-color">Ingresa
+        aquí tus datos personales para comprar <i class="bi bi-person-circle nav-item-icon mx-2"></i></button>
+</div>
+
+<div class="container-fluid d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#modalCliente"
+    id="container-status-success">
+    <button type="button"
+        class="btn btn-lg mt-3 d-flex align-items-center justify-content-center customer-status-success-color">Recuerda
+        que puedes actualizar tus datos en cualquier momento <i
+            class="bi bi-person-circle nav-item-icon mx-2"></i></button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalCliente" tabindex="-1" aria-labelledby="modalClienteLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalClienteLabel">Mis datos de compra</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form>
+                <div class="modal-body mb-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-text col-12 col-lg-4 mb-2 mb-lg-0">Nombre y Apellidos:<span
+                                class="ms-2 text-danger">*</span></span>
+                        <input type="text" class="form-control" placeholder="Ejm: Tania Cruzado Aguirre" minlength="4"
+                            maxlength="50" required autocomplete="false" id="nombreApellido">
+                    </div>
+                    <span id="error-input-nombre" class="d-flex justify-content-center text-danger">Ingrese un nombre y
+                        apellido válido</span>
+                </div>
+                <div class="modal-body mb-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-text col-12 col-lg-4 mb-2 mb-lg-0">Celular:<span
+                                class="ms-2 text-danger">*</span></span>
+                        <input type="number" class="form-control" placeholder="Ejm: 987876655" maxlength="9" required
+                            autocomplete="false" id="celular">
+                    </div>
+                    <span id="error-input-celular" class="d-flex justify-content-center text-danger">Ingrese un número
+                        de celular válido</span>
+                </div>
+                <div class="modal-body mb-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-text col-12 col-lg-4 mb-2 mb-lg-0">Correo:</span>
+                        <input type="email" class="form-control" maxlength="100"
+                            placeholder="Ejm: tania.esperanza@gmail.com" autocomplete="false" id="correo">
+                    </div>
+                    <span id="error-input-correo" class="d-flex justify-content-center text-danger d-none">Ingrese un
+                        correo
+                        electronico válido</span>
+                </div>
+                <div class="modal-body mb-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-text col-12 col-lg-4 mb-2 mb-lg-0">RUC:</span>
+                        <input type="text" class="form-control" maxlength="11" placeholder="Ejm: 20812731101"
+                            autocomplete="false" id="ruc">
+                    </div>
+                    <span id="error-input-ruc" class="d-flex justify-content-center text-danger d-none">Ingrese un
+                        número
+                        de ruc válido ﾠ</span>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-save-customer-status-modal" data-bs-dismiss="modal"
+                        id="btnGuardar" disabled>Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

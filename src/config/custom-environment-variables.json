@@ -1,0 +1,15 @@
+{
+    "API_DOMAIN": "API_DOMAIN",
+    "DOMAIN": "DOMAIN",
+    "SYSTEM_PORT": "SYSTEM_PORT",
+    "IGV": "igv",
+    "jwtPrivateKey": "node_jwtPrivateKey",
+    "privateKey_apiKeyWrite": "node_privateKey_apiKeyWrite",
+    "MYSQL_USER_1": "MYSQL_USER_1",
+    "MYSQL_PASSWORD": "MYSQL_PASSWORD",
+    "MYSQL_DATABASE": "MYSQL_DATABASE",
+    "reCaptcha_secretKey": "reCaptcha_secretKey",
+    "EMAIL_CUSTOMER_SUPPORT": "EMAIL_CUSTOMER_SUPPORT",
+    "EMAIL_ROBOT_USER": "EMAIL_ROBOT_USER",
+    "EMAIL_ROBOT_PASSWORD": "EMAIL_ROBOT_PASSWORD"
+  }

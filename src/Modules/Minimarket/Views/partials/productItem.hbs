@@ -1,0 +1,55 @@
+<div {{#if producto.stock}} class="card d-flex justify-content-center align-items-center my-2" {{else}}
+    class="card d-flex cardBlackWhite justify-content-center align-items-center my-2" {{/if}} style="width: 18rem;">
+    <img src={{producto.imagen_1}} class="product-item__image" {{#if producto.stock}} data-bs-toggle="modal"
+        data-bs-target="#modalProduct" {{/if}}>
+    <div class="card-body">
+        <h5 class="card-title">{{producto.nombre_1}}</h5>
+        <p class="card-text">{{producto.precio_venta}} soles/un </p>
+        <p class="card-text text-danger">1 un <i class="bi bi-arrow-right"></i> {{producto.precio_venta}} soles </p>
+    </div>
+    <div class="card-footer text-muted d-flex justify-content-center">
+        <button class="btn btn-add-product agregar" {{#unless producto.stock}} disabled {{/unless}}>Agregar</button>
+        <div class="input-group w-100 d-none cantidadInputs">
+            <button class="btn bg-amount d-none decrementar" type="button">-</button>
+            <button class="btn bg-amount eliminar" type="button"><i class="bi bi-trash-fill"></i></button>
+            <input class="btn bg-amount cantidad" type="button">
+            <button class="btn bg-amount incrementar" type="button">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalProduct" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{producto.nombre_1}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+                <img src="{{producto.imagen_1}}" class="product-item__image-modal mb-3">
+
+                <div class="w-100 d-flex justify-content-between">
+                    <div>
+                        <h3>{{producto.precio_venta}} soles/un</h3>
+                        <p class="card-text text-danger">1 un <i class="bi bi-arrow-right"></i> {{producto.precio_venta}} soles
+                        </p>
+                    </div>
+                    <button class="btn productName" disabled>
+                       {{producto.marca}}
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-add-product agregar">Agregar</button>
+                <div class="input-group w-100 d-none cantidadInputs">
+                    <button class="btn bg-amount decrementar" type="button">-</button>
+                    <button class="btn bg-amount d-none eliminar" type="button"><i
+                            class="bi bi-trash-fill"></i></button>
+                    <input class="btn bg-amount cantidad" type="button">
+                    <button class="btn bg-amount incrementar" type="button">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

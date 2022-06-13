@@ -1,0 +1,113 @@
+.nav-background-color {
+    background-color: #fbc00a;
+}
+
+.nav-item-icon {
+    font-size: 2rem;
+    color: black;
+}
+
+.customer-status-error-color {
+    background-color: rgba(255, 88, 88, .5019607843137255);
+}
+
+.customer-status-success-color {
+    background-color: rgba(251, 192, 10, .5019607843137255);
+}
+
+.btn-save-customer-status-modal {
+    background-color: rgba(251, 192, 10, .5019607843137255);
+}
+
+.w-input-filter {
+    max-width: 100%;
+}
+
+.btn-find-color {
+    color: #ffff;
+    background-color: #518c21;
+}
+
+.btn-clear-color {
+    color: #ffff;
+    background-color: #565656;
+}
+
+.bg-products {
+    background-color: #efefef;
+}
+
+.fs-10 {
+    font-size: 0.8rem;
+}
+
+.btn-add-product {
+    color: #ffff;
+    background-color: #518c21;
+}
+
+.product-item__image {
+    width: 140px;
+    height: auto;
+}
+
+.product-item__image-modal {
+    width: 200px;
+    height: auto;
+}
+
+.bg-amount {
+    background-color: #303030;
+    color: #ffff;
+}
+
+.bg-amount:hover {
+    color: #ffff;
+}
+
+.select2-results__message {
+    display: none;
+}
+
+.card img {
+    cursor: pointer;
+}
+
+
+.cardBlackWhite {
+
+    -webkit-filter: grayscale(1);
+    /* Webkit */
+    filter: gray;
+    /* IE6-9 */
+    filter: grayscale(1);
+    /* W3C */
+
+    
+}
+
+.productName {
+    background-color: #fbc00a;
+    font-size: 1.2rem;
+    padding: 2px;
+    color: #000000;
+    height: 40px;
+}
+
+@media (min-width: 992px) {
+    .size-map{
+        max-width: 70%;
+    }
+    
+    .w-input-filter {
+        max-width: 70%;
+    }
+}
+
+
+/* Contacto pagina */
+
+.size-map{
+    width: 100%;
+    height: 60vh;
+}

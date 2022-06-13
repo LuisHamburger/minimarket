@@ -1,0 +1,26 @@
+{{> headBasicLibs }}
+
+<body>
+    
+    {{> navbar }}
+    {{> customerStatus }}
+    {{> filters }}
+
+    <div class="container bg-products">
+        <p class="text-center fs-10"> Imagenes referenciales. Ante cualquier discrepancia entre las imagenes y la
+            descripcion del producto, prevalecera lo indicado en la descripcion. Sujeto a disponibilidad en tienda.</p>
+
+        <div class="d-flex flex-wrap justify-content-around" id="productContainer">
+            {{#each productos}}
+            {{> productItem producto=this}}
+            {{/each}}
+        </div>
+
+    </div>
+</body>
+
+{{> footer }}
+{{!-- aqui se puede añadir js --}}
+
+
+</html>

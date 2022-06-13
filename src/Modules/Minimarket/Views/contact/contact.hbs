@@ -1,0 +1,34 @@
+{{> headBasicLibs }}
+
+<body>
+
+    {{> navbar }}
+
+    <div class="container-fluid d-flex flex-column align-items-center">
+        <h1 class="text-center mt-4">Contacto</h1>
+
+        <div class="input-group mt-3 w-input-filter">
+            <span class="input-group-text">Celular</span>
+            <input type="text" class="form-control" value="{{contacto.celular}}" disabled>
+        </div>
+        <div class="input-group mt-3 w-input-filter">
+            <span class="input-group-text">Soporte</span>
+            <input type="text" class="form-control" value="{{contacto.soporte}}" disabled>
+        </div>
+        <div class="input-group mt-3 w-input-filter">
+            <span class="input-group-text">Ubicación</span>
+            <input type="text" class="form-control" value="{{contacto.ubicacion}}" disabled>
+        </div>
+
+        <iframe class="my-5 size-map" src="https://www.google.com/maps/d/u/0/embed?mid=1YcL9k6k_cOhHXwmnFLF0uv4veCMCclh_"></iframe>
+
+    </div>
+
+    
+</body>
+
+{{> footer }}
+{{!-- aqui se puede añadir js --}}
+
+
+</html>

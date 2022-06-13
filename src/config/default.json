@@ -1,0 +1,9 @@
+{
+  "WEBSOCKET_PORT": "3001",
+  "PASSWORD_LIFE": "90",
+  "TOKEN_LIFE": "1h",
+  "EMAIL_ADMIN": "kim.ruiz.g@gmail.com",
+  "MYSQL_PORT": "3306",
+  "SYSTEM_LANGUAGE": "English",
+  "SYSTEM_TIMEZONE": "UTC-05:00"
+}

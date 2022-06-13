@@ -1,0 +1,13 @@
+version: "3"
+services:
+    erp:
+        build: ./erp/
+        restart: "unless-stopped"
+        env_file:
+            - "./erp/.env"
+        volumes:
+            - ./erp/src:/app      
+            - /app/node_modules
+        ports:
+            - "8085:80"
+        command: npm run start
